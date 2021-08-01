@@ -20,3 +20,14 @@ usuarios_machine_learning = {13, 24, 32, 21}
 
 uniao = usuarios_machine_learning | usuarios_data_science
 print(uniao)
+
+intersection = usuarios_machine_learning & usuarios_data_science
+print(intersection)
+
+subtracao = usuarios_data_science - usuarios_machine_learning
+print(subtracao)
+print(23 in subtracao)
+print(24 in subtracao)
+
+exclusivos = usuarios_data_science ^ usuarios_machine_learning
+print(exclusivos)
