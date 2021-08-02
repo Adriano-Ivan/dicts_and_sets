@@ -49,3 +49,4 @@ texto = texto.split()
 print(texto)
 texto_set = set(texto)
 print(texto_set)
+
