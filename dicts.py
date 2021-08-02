@@ -1,3 +1,9 @@
+from collections import defaultdict
+from collections import Counter
+
+class Conta:
+    def __init__(self):
+        print('Imprimindo mensagem de construção...')
 
 texto = 'O cachorro é vermelho, e o vermelho é a cor da paixão. O cachorro é apaixonado pelo vermelho.'
 texto = texto.split()
@@ -50,3 +56,23 @@ print(3 in aparicoes.values())
 
 lista_palavras_em_dicionario = ['palavra {}'.format(palavra) for palavra in aparicoes.keys()]
 print(lista_palavras_em_dicionario)
+
+# del(aparicoes['córrego'])
+# print(aparicoes)
+
+texto = 'O céu é negro, assim como o cobertor noturno é negro, noturno é o planeta negro'
+texto = texto.lower()
+texto = texto.split()
+
+aparicoes = Counter()
+
+for palavra in texto:
+    aparicoes[palavra] += aparicoes[palavra] + 1
+
+
+print(aparicoes)
+
+contas = defaultdict(Conta)
+
+aparicoes2 = Counter(texto)
+print(aparicoes2)
