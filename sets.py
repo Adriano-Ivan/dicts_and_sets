@@ -31,3 +31,21 @@ print(24 in subtracao)
 
 exclusivos = usuarios_data_science ^ usuarios_machine_learning
 print(exclusivos)
+
+print()
+usuarios = {1, 87, 23, 32, 76, 98, 12, 16, 17}
+usuarios.add(123)
+print(len(usuarios))
+print(usuarios)
+
+usuarios_imutavel = frozenset(usuarios)
+print(usuarios_imutavel)
+
+print(type(usuarios))
+print(type(usuarios_imutavel))
+
+texto = 'Bem-vindo, meu nome é Adriano, tenho 19 anos, e gosto do meu nome . Estou estudando programação, e programação é muito interessante.'
+texto = texto.split()
+print(texto)
+texto_set = set(texto)
+print(texto_set)
